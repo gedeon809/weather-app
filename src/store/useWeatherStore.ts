@@ -26,11 +26,13 @@ interface WeatherStore {
   weather: WeatherDay[];
   currentWeather: CurrentWeather | null;
   selectedDay: number | null;
+  location: string;
   setWeather: (data: WeatherDay[]) => void;
   setCurrentWeather: (data: CurrentWeather) => void;
   setLoading: (val: boolean) => void;
   setError: (msg: string | null) => void;
   selectDay: (index: number) => void;
+  setLocation: (val: string) => void;
 }
 
 export const useWeatherStore = create<WeatherStore>((set) => ({
@@ -39,10 +41,12 @@ export const useWeatherStore = create<WeatherStore>((set) => ({
   weather: [],
   currentWeather: null,
   selectedDay: null,
+  location: 'Johannesburg',
 
   setWeather: (data) => set({ weather: data }),
   setCurrentWeather: (data) => set({ currentWeather: data }),
   setLoading: (val) => set({ loading: val }),
   setError: (msg) => set({ error: msg }),
   selectDay: (index) => set({ selectedDay: index }),
+  setLocation: (val) => set({ location: val }),
 }));
