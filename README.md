@@ -50,28 +50,28 @@ A modern weather dashboard built with **React**, **TypeScript**, **Zustand**, an
 
 ## 🗂️ Project Structure
 
-src/
-├── components/ # Reusable UI components
-│ ├── CurrentConditions.tsx
-│ ├── ForecastCard.tsx
-│ ├── LocationSearch.tsx
-│ └── WeatherCard.tsx
-├── pages/
-│ └── HomePage.tsx # Main weather dashboard
-├── services/
-│ └── weatherApi.ts # Weather API wrapper & cache
-├── store/
-│ └── useWeatherStore.ts # Zustand global state store
-└── App.tsx
+- src/
+  ├── components/ # Reusable UI components
+  │ ├── CurrentConditions.tsx
+  │ ├── ForecastCard.tsx
+  │ ├── LocationSearch.tsx
+  │ └── WeatherCard.tsx
+  ├── pages/
+  │ └── HomePage.tsx # Main weather dashboard
+  ├── services/
+  │ └── weatherApi.ts # Weather API wrapper & cache
+  ├── store/
+  │ └── useWeatherStore.ts # Zustand global state store
+  └── App.tsx
 
 ## 📦 Installation
 
 Clone the project and install dependencies:
 
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
-npm install
-npm run dev
+- git clone https://github.com/your-username/weather-app.git
+- cd weather-app
+- npm install
+- npm run dev
 
 ## 🔐 Setup Environment Variables
 
